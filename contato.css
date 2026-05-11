@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    /* Imagem de fundo */
+    background-image: url("galaxia.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+}
+
+/* Camada escura para melhorar leitura */
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+    padding: 30px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+
+    border-radius: 15px;
+    color: white;
+}
+
+.formulario h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+
+    outline: none;
+}
+
+.formulario textarea {
+    resize: none;
+}
+
+.formulario button {
+    margin-top: 20px;
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #8e44ad;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #732d91;
+}
